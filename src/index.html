@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+        rel="shortcut icon"
+        href="../images/favicon-32x32.png"
+        type="image/x-icon"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+        rel="stylesheet"
+    />
+    <!-- Tailwind -->
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>Stats preview card component</title>
+</head>
+<body
+    class="h-screen w-screen flex flex-col justify-center items-center p-6 bg-primary-dark-blue"
+>
+    <main
+        class="flex flex-col justify-evenly items-center overflow-hidden rounded-lg shadow-lg md:flex-row-reverse shadow-gray-800/10 xs:w-80 bg-primary-Dark-desaturated-blue md:w-4/6"
+    >
+        <!-- Image  -->
+        <div class="bg-primary-Soft-violet h-full md:w-4/6">
+            <picture class="opacity-60 w-full h-full">
+                <source
+                    media="(max-width:400px)"
+                    srcset="../images/image-header-mobile.jpg"
+                    type="image/jpg"
+                />
+                <img
+                    src="../images/image-header-desktop.jpg"
+                    alt="Work Image"
+                    class="relative object-cover h-full w-full"
+                />
+            </picture>
+        </div>
+
+        <!-- Content -->
+        <article
+            class="p-6 text-center font-Inter-font md:flex md:flex-col md:text-left md:w-4/6 md:pl-24 md:pr-44"
+        >
+            <h1 class="text-2xl font-bold text-white mb-4 md:text-4xl">
+                Get
+                <strong class="text-primary-Soft-violet">insights</strong>
+                that help your business grow.
+            </h1>
+
+            <p
+                class="text-neutral-Slightly-2 text-xs md:text-base md:mt-6 mt-4 mb-8 leading-5 md:leading-6 md:mb-20"
+            >
+                Discover the benefits of data analytics and make better
+                decisions regarding revenue, customer experience, and
+                overall efficiency.
+            </p>
+
+            <section
+                class="space-y-4 md:flex md:justify-between md:space-y-0 font-Inter-font"
+            >
+                <article class="flex flex-col ">
+                    <strong
+                        class="text-xl text-white font-bold md:text-2xl mb-2"
+                        >10k+
+                    </strong>
+                    <span
+                        class="text-neutral-Slightly-2 text-xs uppercase tracking-widest"
+                        >companies
+                    </span>
+                </article>
+
+                <article class="flex flex-col">
+                    <strong
+                        class="text-xl text-white font-bold md:text-2xl mb-2"
+                        >314
+                    </strong>
+                    <span
+                        class="text-neutral-Slightly-2 text-xs uppercase tracking-widest"
+                        >templates
+                    </span>
+                </article>
+
+                <article class="flex flex-col">
+                    <strong
+                        class="text-xl text-white font-bold md:text-2xl mb-2"
+                        >12M+
+                    </strong>
+                    <span
+                        class="text-neutral-Slightly-2 text-xs uppercase tracking-widest"
+                        >queries
+                    </span>
+                </article>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
